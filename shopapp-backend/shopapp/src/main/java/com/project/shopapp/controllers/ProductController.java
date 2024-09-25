@@ -224,6 +224,6 @@ public class ProductController {
             @PathVariable Long id,
             @Valid @RequestBody ProductDTO productDTO) throws Exception {
         productService.updateProduct(id, productDTO);
-        return ResponseEntity.ok("Update category successfully !");
+        return ResponseEntity.ok("Update product successfully !");
     }
 }
